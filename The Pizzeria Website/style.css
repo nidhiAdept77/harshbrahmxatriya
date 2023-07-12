@@ -212,7 +212,6 @@ h5 {
     box-sizing: border-box;
     color: rgb(231, 231, 231);
     cursor: pointer;
-    /* display: inline-block; */
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 14px;
@@ -262,13 +261,7 @@ h5 {
     width: 28%;
     height: 130%;
 }
-/* .second-screen img {
-    margin-top: 0px;
-    filter: brightness(30%);
-    object-fit: none;
-    width: 100%;
-    height: 90vh;
-} */
+
 .first-screen-bg {
     width: 100%;
     position: relative;
@@ -285,7 +278,6 @@ h5 {
     height: 62%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
@@ -299,7 +291,7 @@ h5 {
 .desk-header {
     display: none;
 }
-.mob-header span{
+.mob-header #openbtn{
     margin-right: 8%;
     color: white;
     font-size: 24px;
@@ -316,11 +308,7 @@ h5 {
     z-index: 1;
     transition: 0.5s;
 }
-/* .overlay-header .close-btn{
-    width:100%;
-    height: fit-content;
-    margin: 5% 3% 0% 3%;
-} */
+
 .overlay-header #closebtn{
     width: fit-content;
     height: fit-content;
@@ -328,6 +316,7 @@ h5 {
     margin-top: 6%;
     font-size: 44px;
     color:#ffff;
+    cursor: pointer;
 }
 .overlay-header .overlay-content{
     margin-top: 20%;
@@ -416,7 +405,6 @@ h5 {
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.9);
     cursor: pointer;
-    /* display: inline-block; */
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 14px;
@@ -566,30 +554,19 @@ h5 {
 .fourth-screen #banner-img1{
     max-height: 100%;
     max-width: 100%;
-    object-fit: cover;
+    
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
 }
 .fourth-screen #offer1 {
     position: absolute;
     right:0;
+    height: 100%;
+    
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 }
-/* .fourth-screen #offer1{
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-} */
 
-/* .fourth-screen #banner-img1 {
-    object-fit: none;
-    object-position: 0% 0%;
-    border-top-left-radius: 14px;
-    border-bottom-left-radius: 14px;
-} */
 .fourth-screen .offer-text1 {
     height: 100%;
     position: absolute;
@@ -630,11 +607,7 @@ h5 {
     width: 56%;
     border-top-right-radius: 14px;
 }
-/*  .fourth-screen #banner-img2 {
-    object-fit: cover;
-    object-position: 0% 0%;
-    border-radius: 14px;
-} */
+
 .fourth-screen .offer-text2{
     width: 35%;
     position: absolute;
@@ -714,7 +687,6 @@ h5 {
 .sixth-screen .grid-container{
     display: grid;
     grid-template-columns: 50% 40%;
-    /* margin: 0px 5% 0% 3%; */
 }
 .sixth-screen .contact-info{
     padding-top:15%;
@@ -737,9 +709,7 @@ h5 {
     justify-content: center;
     background-color: rgb(228, 7, 50);
 }
-/* .seventh-screen #photo-collage{
-    object-fit: cover;
-} */
+
 .seventh-screen .socials-link div{
     height: 100%;
     width: 60%;
@@ -920,103 +890,3 @@ h5 {
     color: black;
     font-family: "Oswald", sans-serif;
 }
-
-/* .fourth-screen .offer-text3{
-    position: absolute;
-    r
-} */
-
-/* .fourth-screen #banner-img3 {
-    object-fit: cover;
-    object-position: 0% 0%;
-    border-radius: 14px;
-} */
-/* .fourth-screen #offer1,
-.fourth-screen #offer2,
-.fourth-screen #offer3{
-    max-height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-} */
-/* .fourth-screen #offer2 {
-    height: 80%;
-}
-.fourth-screen #offer3{
-    height: 100%;
-} */
-
-/* .fourth-screen .deals-banner3 {
-    position: relative;
-    display: flex;
-}
-
-.fourth-screen #banner-img1 {
-    max-width: 100%;
-    
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
-
-
-/* .fourth-screen .deals-grid .deals-banner1{
-    position: relative;
-    
-}
-.fourth-screen #banner-img1{
-    position: absolute;
-    left: 0;
-    top:0;
-}
-.fourth-screen #offer1 {
-    position: absolute;
-    right: 0;
-    top: 0;
-} */
-
-
-
-/* ***********flex layout********************** */
-
-
-/* .fourth-screen .deals-banner1{
-    margin: 5% 3%;
-    position:relative;
-    border-radius: 40px;
-}
-
-.fourth-screen .deals-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 6% 3%;
-    
-}
-
-.fourth-screen .deals-banner2,
-.fourth-screen .deals-banner3 {
-    position: relative;
-    
-    border-radius: 40px;
-}
-.fourth-screen #banner-img2,
-.fourth-screen #banner-img3{
-    object-fit: cover;
-    object-position: 0% 0%;
-}
-.fourth-screen #offer1,
-.fourth-screen #offer2,
-.fourth-screen #offer3 {
-    max-width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-}
-.fourth-screen #offer2{
-    width: 40vw;
-    height: 65vh;
-    
-} */
